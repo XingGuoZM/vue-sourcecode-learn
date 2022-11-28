@@ -370,5 +370,3 @@ function traverse(value, ans = new Set()) {
   return value;
 }
 ```
-
-vue 响应式本质是对对象属性'读取'和'设置'操作的拦截，在属性'读取'时收集依赖（副作用函数），在'设置'的时候执行这些依赖（副作用）。我们可以对副作用进行调度执行，直接执行即 data，计算响应式属性值即 computed，执行自定义回调函数即 watch
